@@ -1,6 +1,6 @@
 
 
-SELECT name,COALESCE(bonus, null) AS bonus 
+SELECT name,b.bonus AS bonus 
 FROM Employee e
 LEFT JOIN Bonus b 
 ON e.empId = b.empId
